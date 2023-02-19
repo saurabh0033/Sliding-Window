@@ -14,9 +14,9 @@ int main(){
     vector<int>ans(n-k+1,0);
     for(int i=0;i<=n-k;i++){
         int j=0;
-        while(j<k){
-            if(v[i+j]<0){
-                ans[i]=v[i+j];
+        while(j<j+k){
+            if(v[j]<0){
+                ans[i]=v[j];
                 break;
             }
             j++;
